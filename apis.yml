@@ -1,0 +1,131 @@
+aid: jenesis-software
+url: https://raw.githubusercontent.com/api-evangelist/jenesis-software/refs/heads/main/apis.yml
+name: Jenesis Software
+kind: company
+description: >-
+  Jenesis Software is a web-based insurance agency management system (AMS) for
+  independent property and casualty agencies, offering client and policy
+  management, ACORD forms, carrier downloads (IVANS/Ebix), comparative rating,
+  two-way email and texting, commission tracking, receipts and payments,
+  e-signature, and reporting. Jenesis does NOT publish a public, self-serve
+  developer API. Integration with outside systems is delivered through
+  vendor-built connectors and partner platforms - Zapier (via JenesisLink),
+  IVANS/Ebix ACORD carrier downloads, comparative raters (Zywave/TurboRater),
+  DocuSign, QuickBooks, RingCentral, Twilio, and payment processors - each
+  arranged and provisioned through Jenesis rather than exposed as documented
+  REST endpoints. The API areas listed here are modeled from Jenesis's published
+  product capabilities and integration surface; they do not reflect a documented
+  public API and their endpoints are not published.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Insurance
+- Agency Management System
+- InsurTech
+- Property and Casualty
+- Policy Management
+- ACORD
+- Carrier Downloads
+- No Public API
+created: '2026-07-10'
+modified: '2026-07-10'
+specificationVersion: '0.19'
+apis:
+- aid: jenesis-software:jenesis-software-clients-api
+  name: Jenesis Software Clients API
+  tags:
+  - Clients
+  - CRM
+  - Prospects
+  - Modeled
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.jenesissoftware.com/integrations/
+  endpointsModeled: true
+  properties:
+  - url: https://www.jenesissoftware.com/integrations/
+    type: Documentation
+  description: >-
+    Modeled capability area for managing clients and prospects (contacts,
+    households, and pipeline). Jenesis manages this data inside its AMS, and
+    outside systems reach it only through partner connectors such as the
+    JenesisLink Zapier integration to CRM/marketing tools - not through a
+    documented public REST API. No public endpoints are published; this entry is
+    modeled from Jenesis's stated product and integration capabilities.
+- aid: jenesis-software:jenesis-software-policies-api
+  name: Jenesis Software Policies API
+  tags:
+  - Policies
+  - Coverage
+  - Renewals
+  - Modeled
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.jenesissoftware.com/integrations/
+  endpointsModeled: true
+  properties:
+  - url: https://www.jenesissoftware.com/integrations/
+    type: Documentation
+  description: >-
+    Modeled capability area for policies, coverage, endorsements, and renewals.
+    Policy data in Jenesis is populated in large part by carrier downloads over
+    the IVANS/Ebix ACORD-standard interfaces and by comparative rater
+    integrations (Zywave/TurboRater). There is no documented public REST API for
+    policies; endpoints are not published and this entry is modeled from stated
+    product capabilities.
+- aid: jenesis-software:jenesis-software-carriers-api
+  name: Jenesis Software Carriers API
+  tags:
+  - Carriers
+  - Downloads
+  - IVANS
+  - Ebix
+  - Modeled
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.jenesissoftware.com/integrations/
+  endpointsModeled: true
+  properties:
+  - url: https://www.jenesissoftware.com/integrations/
+    type: Documentation
+  description: >-
+    Modeled capability area for carrier connectivity and real-time/batch
+    downloads. Jenesis integrates with IVANS and Ebix TEAM-UP for ACORD-standard
+    carrier data downloads and with Brovada/Acturis in Canada. These are
+    industry data-exchange integrations provisioned through Jenesis, not a
+    documented public REST API exposed to third-party developers. No endpoints
+    are published; this entry is modeled from stated integrations.
+- aid: jenesis-software:jenesis-software-documents-api
+  name: Jenesis Software Documents API
+  tags:
+  - Documents
+  - ACORD Forms
+  - E-Signature
+  - Modeled
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.jenesissoftware.com/integrations/
+  endpointsModeled: true
+  properties:
+  - url: https://www.jenesissoftware.com/integrations/
+    type: Documentation
+  description: >-
+    Modeled capability area for documents, ACORD forms, media attachments, and
+    e-signature. Jenesis offers a pre-fillable ACORD form library and integrates
+    with DocuSign, Formstack Sign, and WeSignature for signing. Document
+    workflows are handled inside the AMS and via partner connectors, not through
+    a documented public REST API. No endpoints are published; this entry is
+    modeled from stated product capabilities.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/jenesis-software
+- type: Website
+  url: https://www.jenesissoftware.com/
+- type: Documentation
+  url: https://www.jenesissoftware.com/integrations/
+- type: X
+  url: https://twitter.com/jenesissoftware
+- type: Facebook
+  url: https://www.facebook.com/JenesisSoftware
+- type: YouTube
+  url: https://www.youtube.com/@Jenesissoftware
+- url: https://www.jenesissoftware.com/blog/
+  type: Blog
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

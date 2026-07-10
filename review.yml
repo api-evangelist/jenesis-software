@@ -1,0 +1,104 @@
+aid: jenesis-software
+name: Jenesis Software
+review:
+  question: Does Jenesis Software expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-10'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. Jenesis Software does not publish any
+    public API - REST, WebSocket, or otherwise - so there is no server-push
+    transport on a Jenesis-owned API surface to model. Jenesis is a hosted
+    insurance agency management system; data exchange with outside systems runs
+    through partner-built connectors (Zapier/JenesisLink, IVANS/Ebix carrier
+    downloads, comparative raters, DocuSign, QuickBooks, RingCentral, Twilio)
+    that each carry their own protocols and are out of scope for a
+    Jenesis-authored AsyncAPI document.
+findings:
+  summary: |
+    Jenesis Software does not publish a documented public WebSocket API - and
+    does not publish a documented public REST API either. Jenesis is a
+    web-based insurance agency management system (AMS) for independent P&C
+    agencies. Jenesis's own integration guidance states plainly that it does
+    not offer an open API; instead, agencies connect Jenesis to other systems
+    through vendor-built connectors and partner platforms. There is no developer
+    portal, no API reference, no OpenAPI description, no SDK, and no
+    ws:// or wss:// endpoint documented anywhere on jenesissoftware.com as of
+    the review date.
+  publicApi: |
+    None documented. Jenesis's integrations page and integration blog content
+    describe partner connectors rather than a self-serve developer API. The
+    "partners" pages describe business/technology partnerships and carrier
+    integrations, not a developer program with API access. Programmatic reach
+    into Jenesis client, policy, carrier, and document data is available only
+    indirectly, through provisioned partner integrations.
+  transports:
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented anywhere on Jenesis's site or in any developer materials.
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API, developer portal, API reference, or OpenAPI description is published by Jenesis.
+    - protocol: Zapier
+      scheme: https
+      documented: true
+      note: Integration automation via the JenesisLink Zapier connector (e.g., JenesisNow to GoHighLevel). Partner-mediated, not a Jenesis-owned public API.
+    - protocol: IVANS/Ebix Carrier Download
+      scheme: proprietary
+      documented: true
+      note: ACORD-standard carrier data downloads via IVANS and Ebix TEAM-UP (and Brovada/Acturis in Canada). Industry data-exchange integration, not a Jenesis public API.
+  endpointsConfirmedRest: []
+  endpointsModeled: true
+  endpointsModeledNote: |
+    The four API areas in apis.yml (Clients, Policies, Carriers, Documents) are
+    modeled from Jenesis's published product capabilities and integration
+    surface. They do not correspond to any documented public endpoints, and no
+    base URL or path is asserted for them. They exist in the catalog to describe
+    the logical data domains an agency works with in Jenesis, with an honest
+    note that access is partner-gated rather than via a public API.
+  integrations:
+    - Zapier (JenesisLink)
+    - IVANS carrier downloads
+    - Ebix TEAM-UP carrier interface
+    - Brovada / Acturis (Canada)
+    - Zywave / TurboRater comparative rater
+    - DocuSign
+    - Formstack Sign
+    - WeSignature Payments
+    - Simply Easier Payments
+    - Simply Easier ACORD Forms
+    - Imperial PFS premium finance
+    - QuickBooks (Desktop and Online)
+    - RingCentral
+    - Lightspeed Voice
+    - Twilio
+    - Mailbox Power
+    - USiP Communications
+sources:
+  - url: https://www.jenesissoftware.com/
+    type: Website
+    note: Product homepage. No developer API, REST API, or WebSocket mentioned.
+  - url: https://www.jenesissoftware.com/integrations/
+    type: Documentation
+    note: Lists partner connectors (Zapier, IVANS, Ebix, DocuSign, TurboRater, etc). No public API documentation.
+  - url: https://www.jenesissoftware.com/2025/06/unlocking-the-power-of-integrations-with-your-agency-management-system/
+    type: Article
+    note: Integration guidance stating Jenesis does not offer an open API and relies on partner integrations such as Zapier.
+  - url: https://www.jenesissoftware.com/partners/
+    type: Website
+    note: Business/technology and carrier partnership program - not a developer/API program.
+  - url: https://www.linkedin.com/company/jenesis-software
+    type: LinkedIn
+    note: Company profile.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket protocol surface exists, and Jenesis publishes no public API of
+    any kind. No AsyncAPI document was created because there is no
+    Jenesis-owned server-push transport to model. The apis.yml entry documents
+    the provider honestly as an insurance AMS whose integration surface is
+    partner-mediated, with the four data domains marked endpointsModeled.
