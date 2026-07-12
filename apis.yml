@@ -112,6 +112,8 @@ apis:
     a documented public REST API. No endpoints are published; this entry is
     modeled from stated product capabilities.
 common:
+- type: DomainSecurity
+  url: security/jenesis-software-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/jenesis-software
 - type: Website
