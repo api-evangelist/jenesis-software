@@ -1,0 +1,14 @@
+{
+  "repo": "jenesis-software",
+  "feeds": [
+    {
+      "source": "https://www.jenesissoftware.com/blog/",
+      "feed_url": "https://www.jenesissoftware.com/feed/",
+      "title": "",
+      "saved": 2,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 2,
+  "fetched": "2026-07-11T11:50:51Z"
+}
