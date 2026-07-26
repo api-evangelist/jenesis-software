@@ -36,29 +36,9 @@ Because there is no documented public API, the API areas below are **modeled** f
 
 ## APIs (Modeled)
 
-### Jenesis Software Clients API
 
-Modeled capability area for clients and prospects (contacts, households, pipeline). Reached by outside systems only through partner connectors such as JenesisLink/Zapier - not a documented public REST API.
 
-- **Human URL:** [https://www.jenesissoftware.com/integrations/](https://www.jenesissoftware.com/integrations/)
 
-### Jenesis Software Policies API
-
-Modeled capability area for policies, coverage, endorsements, and renewals. Policy data is populated largely by carrier downloads (IVANS/Ebix) and comparative raters. No documented public REST API.
-
-- **Human URL:** [https://www.jenesissoftware.com/integrations/](https://www.jenesissoftware.com/integrations/)
-
-### Jenesis Software Carriers API
-
-Modeled capability area for carrier connectivity and downloads via IVANS, Ebix TEAM-UP, and Brovada/Acturis. These are industry data-exchange integrations provisioned through Jenesis, not a public developer API.
-
-- **Human URL:** [https://www.jenesissoftware.com/integrations/](https://www.jenesissoftware.com/integrations/)
-
-### Jenesis Software Documents API
-
-Modeled capability area for documents, ACORD forms, media attachments, and e-signature (DocuSign, Formstack Sign, WeSignature). Handled inside the AMS and via partner connectors, not a public REST API.
-
-- **Human URL:** [https://www.jenesissoftware.com/integrations/](https://www.jenesissoftware.com/integrations/)
 
 ## Pricing
 
