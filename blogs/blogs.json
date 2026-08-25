@@ -5,19 +5,17 @@
       "source": "https://www.jenesissoftware.com/feed/",
       "feed_url": "https://www.jenesissoftware.com/feed/",
       "title": "",
-      "saved": 0,
-      "method": "none",
-      "error": "parse_failed"
+      "saved": 3,
+      "method": "feed"
     },
     {
       "source": "https://www.jenesissoftware.com/blog/",
       "feed_url": "https://www.jenesissoftware.com/blog/",
       "title": "",
       "saved": 0,
-      "method": "none",
-      "error": "parse_failed"
+      "method": "none"
     }
   ],
-  "post_count": 2,
-  "fetched": "2026-08-15T12:11:08Z"
+  "post_count": 5,
+  "fetched": "2026-08-22T20:20:02Z"
 }
