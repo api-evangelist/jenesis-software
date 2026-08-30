@@ -5,8 +5,8 @@
       "source": "https://www.jenesissoftware.com/feed/",
       "feed_url": "https://www.jenesissoftware.com/feed/",
       "title": "",
-      "saved": 3,
-      "method": "feed"
+      "saved": 0,
+      "method": "none"
     },
     {
       "source": "https://www.jenesissoftware.com/blog/",
@@ -17,5 +17,5 @@
     }
   ],
   "post_count": 5,
-  "fetched": "2026-08-22T20:20:02Z"
+  "fetched": "2026-08-30T22:33:40Z"
 }
