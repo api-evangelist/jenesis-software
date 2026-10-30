@@ -1,4 +1,4 @@
-# Jenesis Software (jenesis-software)
+# Jenesis Software
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,61 +64,81 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Jenesis Software is a web-based insurance agency management system (AMS) built for independent property and casualty agencies. It helps agents manage existing clients, market to prospects, and run day-to-day operations - client and policy management, a pre-fillable ACORD form library, carrier downloads (IVANS/Ebix), comparative rating, two-way email and texting, commission tracking, receipts and payments, e-signature, invoicing, and reporting.
+Jenesis Software is a web-based insurance agency management system (AMS) for independent property and casualty agencies, offering client and policy management, ACORD forms, carrier downloads (IVANS/Ebix), comparative rating, two-way email and texting, commission tracking, receipts and payments, e-signature, and reporting. Jenesis does NOT publish a public, self-serve developer API. Integration with outside systems is delivered through vendor-built connectors and partner platforms - Zapier (via JenesisLink), IVANS/Ebix ACORD carrier downloads, comparative raters (Zywave/TurboRater), DocuSign, QuickBooks, RingCentral, Twilio, and payment processors - each arranged and provisioned through Jenesis rather than exposed as documented REST endpoints. The API areas listed here are modeled from Jenesis's published product capabilities and integration surface; they do not reflect a documented public API and their endpoints are not published.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/jenesis-software/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/jenesis-software/refs/heads/main/apis.yml)
+**Areas:** Insurance · Agency Management System · Insurtech · Property and Casualty · Policy Management · ACORD · Carrier Downloads
 
-## Access Model - No Public Developer API
+## Jenesis Software on APIs.io
 
-Jenesis Software does **not** publish a public, self-serve developer API. There is no developer portal, no API reference, no OpenAPI description, no SDK, and no WebSocket endpoint documented on jenesissoftware.com as of this writing. Jenesis's own integration guidance states directly that it does not offer an open API.
+Everything profiled for Jenesis Software is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/jenesis-software/](https://apis.io/providers/jenesis-software/)** — or go straight to one of the APIs or properties below.
 
-Instead, Jenesis connects to outside systems through **vendor-built connectors and partner platforms**, each arranged and provisioned through Jenesis rather than exposed as documented REST endpoints:
+### Published properties
 
-- **Zapier** via the **JenesisLink** integration (for example, JenesisNow to GoHighLevel for pipeline, marketing automation, and appointment scheduling)
-- **IVANS** and **Ebix TEAM-UP** ACORD-standard carrier data downloads (and **Brovada/Acturis** in Canada)
-- **Zywave / TurboRater** comparative rating
-- **DocuSign**, **Formstack Sign**, **WeSignature** for e-signature
-- **QuickBooks** (Desktop and Online), **RingCentral**, **Lightspeed Voice**, **Twilio**, **Imperial PFS**, and payment processors (**Simply Easier Payments**, **WeSignature Payments**)
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Because there is no documented public API, the API areas below are **modeled** from Jenesis's published product capabilities and integration surface. They describe the logical data domains an agency works with in Jenesis - they do **not** correspond to documented public endpoints, and no base URL or path is asserted for them (`endpointsModeled: true`).
+#### Security (1)
 
-## Tags
+Authentication, trust centre, and vulnerability disclosure.
 
-- Insurance
-- Agency Management System
-- InsurTech
-- Property and Casualty
-- Policy Management
-- ACORD
-- Carrier Downloads
-- No Public API
+- [Jenesis Software Domain Security](https://apis.io/security/jenesis-software/jenesis-software-domain-security/)
 
-## Timestamps
+## Where to find this API
 
-- **Created:** 2026-07-10
-- **Modified:** 2026-07-10
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## APIs (Modeled)
-
-
-
-
-
-## Pricing
-
-Jenesis deliberately does not publish exact pricing on its own site and directs prospects to schedule a demo or contact sales. Third-party aggregators report per-user, tiered pricing (for example, a Basic tier around $50/user/month plus a per-location fee, and a Pro/Advanced tier around $70/user/month plus a per-location fee). Those figures are third-party-reported, not official Jenesis published pricing, and are noted here only for context - no `plans/` file is included because Jenesis publishes no authoritative pricing artifact.
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/jenesis-software)
 - [Website](https://www.jenesissoftware.com/)
-- [Documentation (Integrations)](https://www.jenesissoftware.com/integrations/)
-- [X](https://twitter.com/jenesissoftware)
-- [Facebook](https://www.facebook.com/JenesisSoftware)
-- [YouTube](https://www.youtube.com/@Jenesissoftware)
+- [Documentation](https://www.jenesissoftware.com/integrations/)
 - [Blog](https://www.jenesissoftware.com/blog/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 3.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.3** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/jenesis-software/](https://apis.io/providers/jenesis-software/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Jenesis Software: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/jenesis-software/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
